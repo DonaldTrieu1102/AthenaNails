@@ -6,7 +6,7 @@
   "scripts": {
     "preinstall": "npm i -g pm2 && pm2 install pm2-logrotate",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "pm2 start app.js"
+    "start": "node app.js"
   },
   "engines": {
     "node": "10.x"
@@ -20,6 +20,5 @@
     "jquery": "^2.2.4",
     "owl.carousel2": "^2.2.1",
     "popper.js": "^1.14.5",
-    "pm2": "^3.5.0"
   }
 }
