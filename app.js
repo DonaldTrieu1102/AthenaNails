@@ -4,7 +4,7 @@ var path = require('path');
 var index = require('./routes/index');
 var admin = require('./routes/admin/index');
 var config = require('./config/config');
-var port = process.env.PORT|| 3000;
+var port = process.env.PORT|| config.port;
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
