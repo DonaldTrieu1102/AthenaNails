@@ -1,11 +1,11 @@
 /**
  * Module dependencies.
  */
-// var express = require('express');
-// var router = express.Router();
+var express = require('express');
+var router = express.Router();
 
-// router.get('/', (req, res)=>{
-//     res.render("../views/home");
-// });
+router.get('/', (req, res)=>{
+    res.render("../views/home");
+});
 
-// module.exports = router;
+module.exports = router;
