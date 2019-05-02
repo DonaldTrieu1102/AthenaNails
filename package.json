@@ -19,6 +19,6 @@
     "bootstrap": "^4.2.1",
     "jquery": "^2.2.4",
     "owl.carousel2": "^2.2.1",
-    "popper.js": "^1.14.5",
+    "popper.js": "^1.14.5"
   }
 }
