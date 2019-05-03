@@ -72,11 +72,11 @@
                                     <li class="active"><a href="#">Home</a></li>                               
                                     <li><a href="#">Services</a></li>
                                     <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="/contact">Contact</a></li>
                                 </ul>
                               <!-- Book Icon -->
                                 <div class="book-now-btn ml-5 mt-4 mt-lg-0 ml-md-4">
-                                    <a href="#" class="btn akame-btn">Book Now</a>
+                                    <a href="#" data-toggle="modal" data-target="#modalBookingForm" class="btn akame-btn">Book Now</a>
                                 </div>
                             </div>
                             <!-- Nav End -->
@@ -667,8 +667,8 @@
                         <h2>Make Stilo Your <br>Number One Choice</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut la.</p>
                         <div class="akame-btn-group mt-30">
-                            <a href="#" class="btn akame-btn active mr-3 mb-3 mb-sm-0">Book An Appointment</a>
-                            <a href="#" class="btn akame-btn">Contact Us</a>
+                            <a href="#" data-toggle="modal" data-target="#modalBookingForm" class="btn akame-btn active mr-3 mb-3 mb-sm-0">Book An Appointment</a>
+                            <a href="/contact" class="btn akame-btn">Contact Us</a>
                         </div>
                     </div>
                 </div>
@@ -739,10 +739,59 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </footer>
+    <div class="modal fade" id="modalBookingForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h4 class="widget-title w-100">Make An Appointment</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            <div class="modal-body mx-3">
+                
+                <form>
+                    <div class="form-group">
+                        <label for="inputFullName">Full name</label>
+                        <input type="text" class="form-control" id="inputFullName" aria-describedby="emailHelp" placeholder="Enter Full Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPhoneNumber">Phone Number</label>
+                        <input type="number" class="form-control" id="inputPhoneNumber" placeholder="Phone Number">
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-6">
+                            <label for="inputDate">Date</label>
+                            <input type="date" class="form-control" id="inputDate" placeholder="Password">
+                        </div>
+                        <div class="col-6">
+                            <label for="inputTime">Time</label>
+                            <input type="time" class="form-control" id="inputTime" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                            <label for="selectExperts">Experts</label>
+                            <select class="form-control" id="selectExperts">
+                              <option>Nguyễn Quang Triệu</option>
+                              <option>Hiển Bụng Bự</option>
+                              <option>Long Són</option>
+                           
+                            </select>
+                          </div>
+           
+                </form>
+
+            </div>
+                <div class="modal-footer w-100 d-flex justify-content-center">
+                    <button class="btn btn akame-btn active mr-3 mb-3 mb-sm-0">Booking now</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Footer Area End -->
 
     <!-- All JS Files -->
