@@ -15,5 +15,8 @@ router.get('/aboutus', (req, res)=>{
     res.render("../views/about_us");
 });
 
+router.get('/services', (req, res)=>{
+    res.render("../views/service");
+});
 
 module.exports = router;
