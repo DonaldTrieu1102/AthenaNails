@@ -7,7 +7,7 @@ var createConnection = () => {
         port: '3306',
         user: 'root',
         password: 'root',
-        database: 'test'
+        database: 'athena_nails'
     });
 };
 function getConnection() {
