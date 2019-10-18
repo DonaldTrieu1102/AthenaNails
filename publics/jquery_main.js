@@ -8,5 +8,7 @@ $(document).ready(function () {
     });
     $(".owl-prev").html('<i class="fa fa-chevron-circle-left fa-2x"></i>');
     $(".owl-next").html('<i class="fa fa-chevron-circle-right fa-2x"></i>');
+
+    
 });
 

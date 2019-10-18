@@ -1,14 +1,21 @@
 var mysql = require('mysql');
-var utils = require('../apps/helpers/helpers')
+var utils = require('../apps/helpers/helper')
 var config = require('../config/default.json');
 var createConnection = () => {
     return mysql.createConnection({
-        host: 'localhost',
+        host: 'db4free.net',
         port: '3306',
-        user: 'root',
-        password: 'root',
+        user: 'trieu123',
+        password: 'trieunq123',
         database: 'athena_nails'
     });
+    // return mysql.createConnection({
+    //     host: 'localhost',
+    //     port: '3306',
+    //     user: 'root',
+    //     password: 'root',
+    //     database: 'test'
+    // });
 };
 function getConnection() {
     var connection = createConnection();

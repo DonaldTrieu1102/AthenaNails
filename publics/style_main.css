@@ -308,3 +308,11 @@
    border-bottom: 1px solid #252525;
    color: #252525;
 }
+/* text-based popup styling */
+.white-popup {
+   position: relative;
+   padding: 20px;
+   width: auto;
+   max-width: 800px;
+   margin: 20px auto;
+}

@@ -1,3 +1,6 @@
+<div id="embed_1569643524383_398" class="white-popup popup-style mfp-hide">
+    <div><img id="img_promotion" caption="false"></div>
+</div>
 <!-- Welcome Area Start -->
 <section class="welcome-area">
     <div class="welcome-slides owl-carousel owl-theme carousel-main">
@@ -252,3 +255,18 @@
         style="background-image: url(https://firebasestorage.googleapis.com/v0/b/athenanailsgallery.appspot.com/o/img%2Fbg-img%2Fcta.png?alt=media&token=7a6bfa83-f5bc-4505-989a-7f260bde3966);">
     </div>
 </section>
+<script>
+    $.ajax({
+        url: '/promotion/ads',
+        method: 'GET',
+        success: (data) => {
+            console.log(data);
+            if (data != null) {
+                $.magnificPopup.open({
+                    items: { src: '#embed_1569643524383_398', type: 'inline' }
+                });
+                $("#img_promotion").attr({ src: data.image });
+            }
+        }
+    });
+</script>

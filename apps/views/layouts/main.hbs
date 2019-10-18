@@ -20,7 +20,12 @@
 
     <link rel="stylesheet" href="./style_main.css">
 
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
+    <!-- Magnific Popup core JS file -->
+
+    <script src="./js/jquery.magnific-popup.min.js"></script>
 </head>
 
 <body>
@@ -31,11 +36,12 @@
     <!-- /Preloader -->
     <div class="social">
         <!-- Social Info -->
-        <a target="_blank" href="https://www.facebook.com/AthenaNandS/" class="facebook"><i
+        <a target="_blank" href="https://www.facebook.com/AthenaNailsSpaSanAntonio/" class="facebook"><i
                 class="fa fa-facebook"></i></a>
-        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-        <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+        <a target="_blank" href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a target="_blank" href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+        <a target="_blank" href="https://www.instagram.com/athena_nails_spa_sanantonio/?hl=vi" class="instagram"><i
+                class="fa fa-instagram"></i></a>
     </div>
     <!-- Header Area Start -->
     <header class="header-area">
@@ -46,34 +52,31 @@
     <!-- Footer Area Start -->
     <footer class="footer-area section-padding-80-0">
         {{>footer}}
-        
-        <script>(function(d, s, id) {
-              var js, fjs = d.getElementsByTagName(s)[0];
-              if (d.getElementById(id)) return;
-              js = d.createElement(s); js.id = id;
-              js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-              fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));
-</script>
 
-<div class="fmessengerBtn">
-<script>
-    window.fbAsyncInit = function() {
-        FB.init({
-            xfbml: true,
-            version : "v3.3"
-        });
-    };
-    </script>
-    <div id="fb-root"></div>
-    <div class="fb-customerchat" 
-        attribution=setup_tool 
-        page_id="2445727928782838" 
-        theme_color="#13cf13" 
-        logged_in_greeting="Hi! I'm Hieu, How can I help you? =)" 
-        logged_out_greeting="Hi! I'm Hieu, How can I help you? =)">
-    </div>
-    </div>
+        <script>(function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+
+        <div class="fmessengerBtn">
+            <script>
+                window.fbAsyncInit = function () {
+                    FB.init({
+                        xfbml: true,
+                        version: "v3.3"
+                    });
+                };
+            </script>
+            <div id="fb-root"></div>
+            <div class="fb-customerchat" attribution=setup_tool page_id="315965865754643" theme_color="#13cf13"
+                logged_in_greeting="Hi! We are AthenaNails, How can We help you ?"
+                logged_out_greeting="Hi! We are AthenaNails, How can We help you ?">
+            </div>
+        </div>
     </footer>
 
     <!-- Footer Area End -->
@@ -81,6 +84,7 @@
     <!-- All JS Files -->
     <!-- jQuery -->
     <script src="js/jquery.min.js"></script>
+
     <!-- Popper -->
     <script src="js/popper.min.js"></script>
     <!-- Bootstrap -->
@@ -95,7 +99,7 @@
     <script src="jquery_main.js"></script>
 
     <script src="header.js"></script>
-
+ 
 </body>
 
 </html>
